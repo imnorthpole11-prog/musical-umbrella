@@ -3,101 +3,182 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="theme-color" content="#0a0a0a" />
-<meta name="description" content="My links." />
-<title>YOUR NAME — Links</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff2d95'/%3E%3C/svg%3E" />
+<meta name="theme-color" content="#120710" />
+<meta name="description" content="Ashley · bunnipoptart — official links" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Ashley · bunnipoptart</title>
+
+<!-- ===== SNAP PIXEL =====
+     1. Go to ads.snapchat.com → Events Manager → New Event Source → Web Pixel
+     2. Copy your Pixel ID and paste it below where it says YOUR_SNAP_PIXEL_ID
+     3. Save & re-upload this file to GitHub
+-->
+<script type="text/javascript">
+(function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+{a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+r.src=n;var u=t.getElementsByTagName(s)[0];
+u.parentNode.insertBefore(r,u);})(window,document,
+'https://sc-static.net/scevent.min.js');
+
+snaptr('init', 'YOUR_SNAP_PIXEL_ID');
+snaptr('track', 'PAGE_VIEW');
+</script>
+<!-- ===== END SNAP PIXEL ===== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ff8ec7'/%3E%3Cstop offset='1' stop-color='%23ff2d95'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='10' fill='url(%23g)'/%3E%3Cpath d='M16 24s-7-4.5-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 23 14c0 5.5-7 10-7 10z' fill='white'/%3E%3C/svg%3E" />
+
 <style>
   :root {
-    --bg: #0a0a0a;
-    --bg-2: #141014;
-    --fg: #f5f5f7;
-    --muted: #a0a0a8;
-    --neon: #ff2d95;
-    --neon-soft: rgba(255, 45, 149, 0.35);
-    --card: rgba(255, 255, 255, 0.04);
-    --border: rgba(255, 255, 255, 0.08);
+    --bg: #100610;
+    --fg: #fff5fa;
+    --muted: #d6b8c8;
+    --pink: #ff4fa3;
+    --pink-soft: #ff8ec7;
+    --pink-deep: #c81f73;
+    --lilac: #c084fc;
+    --gold: #ffd6a5;
+    --glass: rgba(255, 200, 225, 0.07);
+    --glass-strong: rgba(255, 200, 225, 0.13);
+    --border: rgba(255, 180, 215, 0.18);
+    --shadow-pink: 0 12px 40px -10px rgba(255, 79, 163, 0.55);
   }
 
   * { box-sizing: border-box; }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, system-ui, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
+  html, body { margin: 0; padding: 0; }
 
   body {
     min-height: 100dvh;
+    color: var(--fg);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
     background:
-      radial-gradient(1200px 600px at 50% -10%, rgba(255, 45, 149, 0.18), transparent 60%),
-      radial-gradient(800px 500px at 50% 110%, rgba(255, 45, 149, 0.10), transparent 60%),
-      var(--bg);
+      radial-gradient(1000px 600px at 50% -10%, rgba(255, 142, 199, 0.28), transparent 60%),
+      radial-gradient(900px 500px at 20% 110%, rgba(192, 132, 252, 0.18), transparent 60%),
+      radial-gradient(700px 400px at 90% 80%, rgba(255, 79, 163, 0.18), transparent 65%),
+      linear-gradient(180deg, #120710 0%, #1a0a1c 100%);
     display: flex;
     justify-content: center;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    overflow-x: hidden;
+  }
+
+  .sparkle {
+    position: fixed;
+    pointer-events: none;
+    color: var(--pink-soft);
+    opacity: 0.6;
+    font-size: 14px;
+    animation: float 6s ease-in-out infinite;
+    z-index: 0;
+  }
+  .sparkle.s1 { top: 12%; left: 8%; }
+  .sparkle.s2 { top: 22%; right: 10%; animation-delay: 1.5s; font-size: 18px; color: var(--gold); }
+  .sparkle.s3 { top: 60%; left: 6%; animation-delay: 3s; font-size: 12px; color: var(--lilac); }
+  .sparkle.s4 { top: 75%; right: 12%; animation-delay: 0.8s; }
+  .sparkle.s5 { top: 40%; right: 6%; animation-delay: 2.2s; font-size: 10px; }
+  .sparkle.s6 { top: 88%; left: 14%; animation-delay: 4s; font-size: 16px; color: var(--gold); }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.5; }
+    50% { transform: translateY(-12px) rotate(15deg); opacity: 0.95; }
   }
 
   main {
+    position: relative;
+    z-index: 1;
     width: 100%;
-    max-width: 460px;
-    padding: 56px 22px 48px;
+    max-width: 440px;
+    padding: 48px 22px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .avatar {
-    width: 112px;
-    height: 112px;
+  .avatar-wrap {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    margin-bottom: 22px;
+  }
+
+  .avatar-wrap::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
     border-radius: 50%;
-    background:
-      linear-gradient(135deg, #2a1a24, #1a0f18);
+    background: conic-gradient(from 0deg, var(--pink), var(--lilac), var(--gold), var(--pink-soft), var(--pink));
+    filter: blur(8px);
+    opacity: 0.7;
+    animation: spin 8s linear infinite;
+    z-index: 0;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .avatar {
+    position: relative;
+    z-index: 1;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2a1424, #1a0a1c);
     display: grid;
     place-items: center;
-    color: var(--neon);
+    color: var(--pink-soft);
+    font-family: "Dancing Script", cursive;
     font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 1px;
-    border: 1px solid var(--border);
+    font-size: 64px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
     box-shadow:
-      0 0 0 2px rgba(255, 45, 149, 0.25),
-      0 0 40px var(--neon-soft);
+      0 0 0 3px rgba(255, 79, 163, 0.35),
+      0 0 50px rgba(255, 79, 163, 0.4),
+      inset 0 0 30px rgba(255, 142, 199, 0.15);
     overflow: hidden;
   }
 
-  /* Replace the initials with: <img src="..." alt=""> inside .avatar */
-  .avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
   h1 {
-    margin: 18px 0 6px;
-    font-size: 22px;
+    margin: 4px 0 2px;
+    font-family: "Dancing Script", "Brush Script MT", cursive;
+    font-size: 44px;
     font-weight: 700;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #fff 0%, var(--pink-soft) 50%, var(--pink) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 30px rgba(255, 79, 163, 0.3);
   }
 
   .handle {
-    color: var(--neon);
-    font-size: 14px;
-    margin-bottom: 14px;
+    color: var(--pink-soft);
+    font-size: 13px;
+    margin-bottom: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .handle::before, .handle::after {
+    content: "·";
+    margin: 0 10px;
+    color: var(--pink);
+    opacity: 0.6;
   }
 
   .bio {
     color: var(--muted);
     font-size: 15px;
-    line-height: 1.5;
-    max-width: 36ch;
-    margin: 0 0 28px;
+    line-height: 1.55;
+    max-width: 32ch;
+    margin: 0 0 26px;
   }
 
   .links {
@@ -107,101 +188,304 @@
     gap: 12px;
   }
 
+  /* All buttons */
   .btn {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     width: 100%;
     padding: 16px 18px;
-    border-radius: 14px;
-    font-size: 16px;
+    border-radius: 16px;
+    font-size: 14.5px;
     font-weight: 600;
+    letter-spacing: 0.3px;
     text-decoration: none;
     color: var(--fg);
-    background: var(--card);
+    background: var(--glass);
     border: 1px solid var(--border);
-    transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    transition: transform 0.2s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
     -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    font-family: inherit;
   }
 
-  .btn:hover,
-  .btn:focus-visible {
-    background: rgba(255, 255, 255, 0.07);
-    border-color: rgba(255, 255, 255, 0.18);
-    transform: translateY(-1px);
+  .btn:hover, .btn:focus-visible {
+    background: var(--glass-strong);
+    border-color: rgba(255, 180, 215, 0.32);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px -10px rgba(255, 79, 163, 0.35);
     outline: none;
   }
-
   .btn:active { transform: translateY(0); }
 
+  .btn svg { width: 18px; height: 18px; flex: 0 0 18px; }
+
+  /* VIP — dominant CTA */
   .btn--vip {
-    background: linear-gradient(135deg, #ff2d95, #c81f73);
+    padding: 20px 22px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    background: linear-gradient(115deg, #ff4fa3, #ff8ec7, #c084fc, #ff4fa3);
+    background-size: 300% 100%;
+    animation: shimmer 6s ease infinite;
     border-color: transparent;
     color: #fff;
-    box-shadow: 0 10px 30px -10px var(--neon-soft), 0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+    box-shadow: var(--shadow-pink), 0 0 0 1px rgba(255, 255, 255, 0.12) inset;
+    margin-bottom: 4px;
   }
 
-  .btn--vip:hover,
-  .btn--vip:focus-visible {
-    background: linear-gradient(135deg, #ff48a4, #d62680);
-    box-shadow: 0 16px 36px -12px var(--neon-soft), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  @keyframes shimmer {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
   }
 
-  .btn svg {
-    width: 18px;
-    height: 18px;
-    flex: 0 0 18px;
+  .btn--vip:hover, .btn--vip:focus-visible {
+    box-shadow: 0 18px 44px -12px rgba(255, 79, 163, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+    transform: translateY(-2px);
+  }
+
+  .btn--vip .vip-badge {
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    margin-left: 4px;
+  }
+
+  .vip-sub {
+    font-size: 11.5px;
+    color: var(--pink-soft);
+    margin: -2px 0 8px;
+    letter-spacing: 0.4px;
+    opacity: 0.85;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--pink);
+    opacity: 0.4;
+    margin: 14px 0 10px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  .divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--pink), transparent);
   }
 
   footer {
-    margin-top: 36px;
+    margin-top: 30px;
     color: var(--muted);
-    font-size: 12px;
-    opacity: 0.7;
+    font-size: 11px;
+    opacity: 0.55;
+    letter-spacing: 1px;
+  }
+  footer .heart {
+    color: var(--pink);
+    display: inline-block;
+    animation: beat 1.6s ease-in-out infinite;
+  }
+  @keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+
+  /* Age gate modal */
+  .gate {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 4, 10, 0.78);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 100;
+    animation: fadeIn 0.25s ease;
+  }
+  .gate.open { display: flex; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+  .gate-card {
+    width: 100%;
+    max-width: 380px;
+    background: linear-gradient(180deg, #1f0d1b, #150810);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 28px 24px;
+    text-align: center;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(255, 79, 163, 0.25);
+    animation: pop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  @keyframes pop {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  .gate-card h2 {
+    margin: 8px 0 4px;
+    font-family: "Dancing Script", cursive;
+    font-size: 34px;
+    background: linear-gradient(135deg, #fff, var(--pink));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gate-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 22px;
+  }
+  .gate-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .gate-yes {
+    padding: 16px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(115deg, #ff4fa3, #c084fc);
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-family: inherit;
+    box-shadow: var(--shadow-pink);
+    transition: transform 0.15s ease;
+  }
+  .gate-yes:hover { transform: translateY(-1px); }
+  .gate-no {
+    padding: 14px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .gate-no:hover { color: var(--fg); }
+  .gate-fine {
+    font-size: 10.5px;
+    color: var(--muted);
+    opacity: 0.55;
+    margin-top: 14px;
+    line-height: 1.4;
   }
 
   @media (min-width: 480px) {
-    main { padding-top: 72px; }
-    h1 { font-size: 24px; }
+    main { padding-top: 64px; }
+    h1 { font-size: 50px; }
   }
 
   @media (prefers-reduced-motion: reduce) {
+    .avatar-wrap::before, .btn--vip, .sparkle, .heart, .gate, .gate-card { animation: none; }
     .btn { transition: none; }
   }
 </style>
 </head>
 <body>
+  <div class="sparkle s1" aria-hidden="true">✦</div>
+  <div class="sparkle s2" aria-hidden="true">✧</div>
+  <div class="sparkle s3" aria-hidden="true">✦</div>
+  <div class="sparkle s4" aria-hidden="true">✧</div>
+  <div class="sparkle s5" aria-hidden="true">✦</div>
+  <div class="sparkle s6" aria-hidden="true">✧</div>
+
   <main>
-    <div class="avatar" aria-hidden="true">
-      <!-- Replace with: <img src="profile.jpg" alt="Your name" /> -->
-      YN
+    <div class="avatar-wrap">
+      <div class="avatar" aria-hidden="true">
+        <!-- Replace the "A" with: <img src="profile.jpg" alt="Ashley" /> -->
+        A
+      </div>
     </div>
 
-    <h1>Your Name</h1>
-    <div class="handle">@yourhandle</div>
+    <h1>Ashley</h1>
+    <div class="handle">bunnipoptart</div>
 
     <p class="bio">
-      Short bio goes here. One or two lines about who you are and what you do.
+      welcome to my little corner ♡ exclusive content + everywhere you can find me below
     </p>
 
     <nav class="links" aria-label="Links">
-      <a class="btn btn--vip" href="https://example.com/vip" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M12 2l2.39 6.95H22l-5.8 4.21L18.6 20 12 15.77 5.4 20l2.4-6.84L2 8.95h7.61L12 2z"/>
+
+      <!-- DOMINANT VIP CTA -->
+      <a class="btn btn--vip" id="vipBtn" href="https://link.me/bunnipoptart" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 21s-7-4.5-9.5-9C1 9 2.5 5 6.5 5c2 0 3.5 1 5.5 3 2-2 3.5-3 5.5-3 4 0 5.5 4 4 7-2.5 4.5-9.5 9-9.5 9z"/>
         </svg>
-        VIP Access
+        Unlock the Vault 🔐
       </a>
 
-      <a class="btn" href="https://twitter.com/yourhandle" target="_blank" rel="noopener">
+      <div class="divider" aria-hidden="true">find me elsewhere</div>
+
+      <!-- TODO: swap the # below for your real links -->
+      <a class="btn" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+        Instagram
+      </a>
+
+      <a class="btn" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M18.244 2H21l-6.52 7.45L22 22h-6.81l-4.77-6.24L4.8 22H2.04l6.98-7.98L2 2h6.91l4.31 5.7L18.24 2zm-2.39 18h1.86L8.24 4H6.27l9.58 16z"/>
         </svg>
         Twitter / X
       </a>
+
+      <a class="btn" href="mailto:hello@bunnipoptart.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        Business inquiries
+      </a>
+
     </nav>
 
-    <footer>© Your Name</footer>
+    <footer>made with <span class="heart">♥</span> by ashley</footer>
   </main>
+
+  <script>
+    (function () {
+      var vipBtn = document.getElementById('vipBtn');
+
+      function fireSnap(event, props) {
+        try {
+          if (typeof snaptr === 'function') snaptr('track', event, props || {});
+        } catch (e) {}
+      }
+
+      vipBtn.addEventListener('click', function () {
+        // Fire intent event — every click on the Vault, audience-building
+        fireSnap('START_CHECKOUT', { item_category: 'vault_click' });
+        // Link navigates naturally to its href.
+      });
+    })();
+  </script>
 </body>
 </html>
