@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0a0a0a" />
+<meta name="description" content="My links." />
+<title>YOUR NAME — Links</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff2d95'/%3E%3C/svg%3E" />
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg-2: #141014;
+    --fg: #f5f5f7;
+    --muted: #a0a0a8;
+    --neon: #ff2d95;
+    --neon-soft: rgba(255, 45, 149, 0.35);
+    --card: rgba(255, 255, 255, 0.04);
+    --border: rgba(255, 255, 255, 0.08);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    min-height: 100dvh;
+    background:
+      radial-gradient(1200px 600px at 50% -10%, rgba(255, 45, 149, 0.18), transparent 60%),
+      radial-gradient(800px 500px at 50% 110%, rgba(255, 45, 149, 0.10), transparent 60%),
+      var(--bg);
+    display: flex;
+    justify-content: center;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  main {
+    width: 100%;
+    max-width: 460px;
+    padding: 56px 22px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background:
+      linear-gradient(135deg, #2a1a24, #1a0f18);
+    display: grid;
+    place-items: center;
+    color: var(--neon);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 1px;
+    border: 1px solid var(--border);
+    box-shadow:
+      0 0 0 2px rgba(255, 45, 149, 0.25),
+      0 0 40px var(--neon-soft);
+    overflow: hidden;
+  }
+
+  /* Replace the initials with: <img src="..." alt=""> inside .avatar */
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  h1 {
+    margin: 18px 0 6px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+  }
+
+  .handle {
+    color: var(--neon);
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .bio {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 36ch;
+    margin: 0 0 28px;
+  }
+
+  .links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 16px 18px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--fg);
+    background: var(--card);
+    border: 1px solid var(--border);
+    transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn:hover,
+  .btn:focus-visible {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.18);
+    transform: translateY(-1px);
+    outline: none;
+  }
+
+  .btn:active { transform: translateY(0); }
+
+  .btn--vip {
+    background: linear-gradient(135deg, #ff2d95, #c81f73);
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 10px 30px -10px var(--neon-soft), 0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  }
+
+  .btn--vip:hover,
+  .btn--vip:focus-visible {
+    background: linear-gradient(135deg, #ff48a4, #d62680);
+    box-shadow: 0 16px 36px -12px var(--neon-soft), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  }
+
+  .btn svg {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+  }
+
+  footer {
+    margin-top: 36px;
+    color: var(--muted);
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  @media (min-width: 480px) {
+    main { padding-top: 72px; }
+    h1 { font-size: 24px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .btn { transition: none; }
+  }
+</style>
+</head>
+<body>
+  <main>
+    <div class="avatar" aria-hidden="true">
+      <!-- Replace with: <img src="profile.jpg" alt="Your name" /> -->
+      YN
+    </div>
+
+    <h1>Your Name</h1>
+    <div class="handle">@yourhandle</div>
+
+    <p class="bio">
+      Short bio goes here. One or two lines about who you are and what you do.
+    </p>
+
+    <nav class="links" aria-label="Links">
+      <a class="btn btn--vip" href="https://example.com/vip" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2l2.39 6.95H22l-5.8 4.21L18.6 20 12 15.77 5.4 20l2.4-6.84L2 8.95h7.61L12 2z"/>
+        </svg>
+        VIP Access
+      </a>
+
+      <a class="btn" href="https://twitter.com/yourhandle" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M18.244 2H21l-6.52 7.45L22 22h-6.81l-4.77-6.24L4.8 22H2.04l6.98-7.98L2 2h6.91l4.31 5.7L18.24 2zm-2.39 18h1.86L8.24 4H6.27l9.58 16z"/>
+        </svg>
+        Twitter / X
+      </a>
+    </nav>
+
+    <footer>© Your Name</footer>
+  </main>
+</body>
+</html>
